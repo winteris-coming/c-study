@@ -225,27 +225,27 @@
 //	else
 //		return Feibo(n - 1) + Feibo(n - 2);
 //}
-int Feibo1(int n)
-{
-	int a=1;
-	int b=1;
-	int c=0;
-	while (n > 2)
-	{
-		c = a + b;
-		a = b;
-		b = c;
-		n--;
-
-	}
-	return c;
-}
-int main()
-{
-	int ret = 0;
-	int num = 0;
-	scanf("%d", &num);
-	ret=Feibo1(num);
-	printf("%d", ret);
-	return 0;
-}
+//int Feibo1(int n)
+//{
+//	int a=1;
+//	int b=1;
+//	int c=0;
+//	while (n > 2)
+//	{
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//
+//	}
+//	return c;
+//}
+//int main()
+//{
+//	int ret = 0;
+//	int num = 0;
+//	scanf("%d", &num);
+//	ret=Feibo1(num);
+//	printf("%d", ret);
+//	return 0;
+//}

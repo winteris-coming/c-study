@@ -24,5 +24,28 @@
     <ClCompile Include="循环和分支.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="函数和递归.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="add.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="数组.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="三子棋.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="game.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="add.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

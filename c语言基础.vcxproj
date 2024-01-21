@@ -128,8 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1.c" />
+    <ClCompile Include="add.c" />
     <ClCompile Include="c语言基础知识.c" />
+    <ClCompile Include="game.c" />
+    <ClCompile Include="三子棋.c" />
+    <ClCompile Include="函数和递归.c" />
     <ClCompile Include="循环和分支.c" />
+    <ClCompile Include="数组.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="add.h" />
+    <ClInclude Include="game.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
