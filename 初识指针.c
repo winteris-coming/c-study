@@ -88,6 +88,7 @@
 //{
 //	int* p;
 //	*p = 20;//局部变量不初始化
+// int*p=Null;//当不给指针变量赋值时，可以赋值给它Null，
 //}
 //2.指针越界访问
 //int main()
@@ -110,4 +111,160 @@
 //{
 //	int* p = test();
 //	*p = 20;
+//}
+
+
+
+
+
+
+////指针+-整数
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int* p = &arr;
+//	for (i=0;i<sz;i++)
+//	{
+//		printf("%d\n", *p);
+//		p+=2;
+//	}
+//	return 0;
+//}
+
+
+
+
+
+////指针+-指针
+//int main()
+//{
+//	char arr1[5] = { 0 };
+//	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+//	int* p = &arr;
+//	printf("%d\n", &arr[9] - &arr[0]);//9个步长
+//	printf("d\n", &arr[9] - &arr1[0]);//不允许两种指针类型相减
+//
+//	return 0;
+//}
+
+
+
+
+
+////利用指针求字符串长度
+//int my_str(char* str)
+//{
+//	char* start = str;
+//	char* end = str;
+//	while (*end != '\0')
+//	{
+//		end++;
+//		printf("%d\n", end);
+//	}
+//	return end - start;
+//}
+//int main()
+//{
+//	char str[] = "hello";
+//	int len = my_str(str);
+//	printf("%d\n", len);
+//	return 0;
+//
+//}
+
+
+
+
+
+////指针比较
+////标准规定：允许指向数组元素的指针指向数组最后一个元素后面的那个内存相比较，但不允许与指向第一个元素之前的那个内存位置相比较
+//#define N_VALUES 5
+//int main()
+//{
+//	float values[N_VALUES];
+//	float* vp;
+//	for (vp = &values[N_VALUES]; vp > &values[0];)
+//	{
+//		*--vp = 0;
+//	}
+//	/*for (vp = &values[N_VALUES]; vp >= &values[0]; vp--)
+//	{
+//		*vp = 0;//不建议这种写法
+//	}*/
+//}
+
+
+
+
+
+
+////数组名
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	printf("%p\n", arr);//首元素的地址
+//	printf("%p\n", arr+1);
+//
+//	printf("%p\n", &arr[0]);
+//	printf("%p\n", &arr[0]+1);
+//
+//	printf("%p\n", &arr);//首元素的地址，但代表的是整个数组的地址
+//	printf("%p\n", &arr+1);
+//	
+//	
+//	return 0;
+//}
+
+
+
+
+
+////数组通过指针来进行访问
+//int main()
+//{
+//	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+//	int* p = arr;
+//	int i = 0;
+//	
+//
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%p==========%p\n", p+i, &arr[i]);
+//	}
+//	return 0;
+//}
+
+
+
+
+
+
+////二级指针
+//int main()
+//{
+//	int a = 10;//变量
+//	int* pa = &a;//指针变量，存放变量的地址
+//	int** ppa = &pa;//二级指针，存放指针变量的地址
+//	printf("%p\n", &pa);
+//	printf("%p\n", ppa);
+//	return 0;
+//}
+
+
+
+
+
+////指针数组---存放指针的数组
+//int main()
+//{
+//	int a = 10, b = 20, c = 30;
+//	int* arr[3] = { &a,&b,&c };
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("%d\n", *(arr[i]));
+//	}
+//	return 0;
 //}
